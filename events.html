@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="Pics/UPB SoGu Logo.png" href="Pics/UPB SoGu Logo.png">
+        <title>UPB Sociology Guild</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+
+        <header>
+            <a href="index.html">
+            <img src="Pics/UPB SoGU Logo.png" class="logo" style="width:100px;height:100px;" alt="UPB SoGu Logo">
+            </a>
+            <h1 class="header">The UPB Sociology Guild</h1>
+        </header>
+            <nav class="homebar">
+
+                <ul>
+                <li><a href="index.html">Roost</a></li>
+                <li><a href="sosyus.html">SOSYUS</a></li>
+                <li><a href="events.html">Events and Membership</a></li>
+                <li><a href="calendar.html">Guild Calendar</a></li>
+                <li><a href="about.html">About UPB Sociology</a></li>
+                </ul>
+
+            </nav>
+
+        <main>
+
+        <h1 class="subsitename">Events of the Guild</h1>
+            <p class="subheadcal">Get to know us!</p>
+
+           <div class="conent">
+                <div class="rapper">
+                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTRmR4f6-7-9VpcPc1ibXIwfwAIT57abSdKqWrEcDQtZbM23ysJdcbGMR0pftVnLVbWshDooS5U6csb/pubembed?start=false&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+                width="1500px" 
+                height="500px" 
+                class="evcon"
+                scrolling="no"
+                style="border:none";>
+                </iframe>
+                </div>
+           </div>
+    
+        </main>
+
+
+        <footer class="hometer">
+
+            <div class="container">
+                <a href="https://www.facebook.com/UPBSociologyGuild" target="_blank">
+                <div class="box" id="box1"><img src="Pics/fb.png" style="width:30px;height:30px;"></div>
+                </a>
+                <a href="mailto:upbsociologyguild@gmail.com" target="_blank">
+                <div class="box" id="box2"><img src="Pics/email.png" style="width:30px;height:30px;"></div>
+                </a>
+                <a href="https://www.instagram.com/upbsogu?exln=NDFqY3A1Y3A1YXNpdWht" target="_blank">
+                <div class="box" id="box3"><img src="Pics/ig.png" style="width:30px;height:30px;"></div>
+                </a>
+            </div>
+
+        </footer>
+        
+        <script>
+            document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.3) return;
+            const particle = document.createElement('span');
+            particle.textContent = '🦋';
+            particle.style.cssText = `
+            position: fixed;
+            left: ${e.clientX}px;
+            top: ${e.clientY}px;
+            font-size: 14px;
+            pointer-events: none;
+            user-select: none;
+            z-index: 9999;
+            transition: transform 1s ease, opacity 1s ease;
+            opacity: 1;
+            `;
+            document.body.appendChild(particle);
+            requestAnimationFrame(() => {
+            particle.style.transform = `translate(${(Math.random() - 0.5) * 40}px, -40px) scale(0.5)`;
+            particle.style.opacity = '0';
+            });
+            setTimeout(() => particle.remove(), 1000);
+        });
+        </script>
+
+        <script>
+        const logo = document.querySelector('.logo');
+        if (logo) {
+            logo.style.transition = 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            logo.addEventListener('mouseenter', () => logo.style.transform = 'scale(1.15) rotate(-3deg)');
+            logo.addEventListener('mouseleave', () => logo.style.transform = 'scale(1) rotate(0deg)');
+        }
+        </script>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.homebar a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.style.fontWeight = 'bold';
+                link.style.textDecoration = 'underline';
+                link.style.textUnderlineOffset = '6px';
+                link.style.opacity = '1';
+            }
+            });
+        });
+        </script>
+
+    </body>
+</html>

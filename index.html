@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="Pics/UPB SoGu Logo.png" href="Pics/UPB SoGu Logo.png">
+        <title>UPB Sociology Guild</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+            <img src="Pics/UPB SoGU Logo.png" class="logo" style="width:100px;height:100px;" alt="UPB SoGu Logo">
+            </a>
+            <h1 class="header">The UPB Sociology Guild</h1>
+        </header>
+            <nav class="homebar">
+
+                <ul>
+                <li><a href="index.html">Roost</a></li>
+                <li><a href="sosyus.html">SOSYUS</a></li>
+                <li><a href="events.html">Events and Membership</a></li>
+                <li><a href="calendar.html">Guild Calendar</a></li>
+                <li><a href="about.html">About UPB Sociology</a></li>
+                </ul>
+
+            </nav>
+        <main>
+
+            <section class="vidsec">
+                <video autoplay loop muted playsinline class="bgvid">
+                    <source src="Vids/homevidd.mp4" type="video/mp4">
+                </video>
+                <div class="conoverlay">
+                <h1 class="greeting">Welcome to the Guild, Social Butterfly!</h1>
+                <pre class="intro">
+                The UPB Sociology Guild is the only student-led academic organization under the 
+                College of Social Sciences and in the University of the Philippines Baguio for 
+                Sociology students and Sociology enthusiasts. Established on November 27, 2018, UPB SoGu 
+                aims to: promote sociological thought and contribute to social change, strengthen Sociology 
+                as a discipline, and advocate for Sociology as a way of life within the university 
+                and to the wider public.
+                </div>
+                </pre>
+            </section>
+    
+        </main>
+        <footer class="hometer">
+
+            <div class="container">
+                <a href="https://www.facebook.com/UPBSociologyGuild" target="_blank">
+                <div class="box" id="box1"><img src="Pics/fb.png" style="width:30px;height:30px;"></div>
+                </a>
+                <a href="mailto:upbsociologyguild@gmail.com" target="_blank">
+                <div class="box" id="box2"><img src="Pics/email.png" style="width:30px;height:30px;"></div>
+                </a>
+                <a href="https://www.instagram.com/upbsogu?exln=NDFqY3A1Y3A1YXNpdWht" target="_blank">
+                <div class="box" id="box3"><img src="Pics/ig.png" style="width:30px;height:30px;"></div>
+                </a>
+            </div>
+
+        </footer>
+
+        
+        <script>
+          // Example: Dynamic greeting change based on the time of day
+          const hour = new Date().getHours();
+          const greetingTag = document.querySelector('.greeting');
+
+          if (greetingTag) {
+            if (hour < 12) {
+              greetingTag.textContent = "Good Morning, Social Butterfly!";
+            } else if (hour < 18) {
+              greetingTag.textContent = "Good Afternoon, Social Butterfly!";
+            } else {
+              greetingTag.textContent = "Good Evening, Social Butterfly!";
+            }
+          }
+        </script>
+
+        <script>
+            document.addEventListener('mousemove', (e) => {
+            // Only create a particle roughly every 5th movement to avoid lag
+            if (Math.random() > 0.3) return;
+            const particle = document.createElement('span');
+            particle.textContent = '🦋';
+            particle.style.cssText = `
+            position: fixed;
+            left: ${e.clientX}px;
+            top: ${e.clientY}px;
+            font-size: 14px;
+            pointer-events: none;
+            user-select: none;
+            z-index: 9999;
+            transition: transform 1s ease, opacity 1s ease;
+            opacity: 1;
+            `;
+            document.body.appendChild(particle);
+            requestAnimationFrame(() => {
+            particle.style.transform = `translate(${(Math.random() - 0.5) * 40}px, -40px) scale(0.5)`;
+            particle.style.opacity = '0';
+            });
+            setTimeout(() => particle.remove(), 1000);
+        });
+        </script>
+
+        <script>
+            const quotes = [
+                "\"...and the sociological imagination our most needed quality of mind.\" — C.W. Mills",
+                "\"...the sociologist... must listen to gossip... to read other people's mail, to open closed cabinets.\" — Berger",
+                "\"First, it is not true that society is made up only of individuals; it also includes material things, which play an essential role in the common life.\" — Durkheim",
+                "\"Let the ruling class tremble... The proletarians have nothing to lose but their chains. [We] have a world to win\" — Marx",
+                "\"[The people] does not 'by nature' wish to earn more and more money...\" — Weber",
+                "\"When the mother of the race is free, we shall have a better world...\" — Gilman",
+                "\"The training of the schools we need [today] more than ever...\" — Du Bois",
+                "\"The universal tendency of oppression is opposed to thought as such. Thought is happiness, even where it defines unhappiness: by enunciating it.\" — Adorno",
+                "\"...when the individual is in the immediate presence of others, [their] activity will have a promissory character.\" — Goffman",
+                "\"How right it is for a mother of young children to work  full-time job, or how much a husband should be responsible for the home\" — Hochschild",
+                "\"...rational systems serve to deny human reason; rational systems are often unreasonable.\" — Ritzer",
+                "\"We need then to make our choices about the directions in which we want the world to go.\" — Wallerstein",
+                "\"The habitus is the result of a long process of inculcation, beginning in early childhood, which becomes a 'second sense' or a second nature.\" — Bourdieu",
+                "\"...this power... had to be like a faceless gaze that transformed the whole social body into a field of perception: thousands of eyes... everywhere.\" — Foucault",
+                "\"Sociology is at risk of disappearing into a welter of positivism, a minor branch of economics or political science, if we lose sight of our founders.\" — Burawoy",
+                "\"Thus, things are not the inert, passive, and lifeless 'objects' we often mistake them to be.\" — Pyyhtinen",
+                "\"...weak ties are an important resource in making possible mobility opportunity.\" — Granovetter",
+                "\"Neither love nor death can be entered twice.\" — Bauman",
+            ];
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const introSection = document.querySelector('.conoverlay');
+                if (introSection) {
+                const quoteBox = document.createElement('p');
+                quoteBox.className = 'socioquote';
+                quoteBox.style.cssText = `
+                    font-style: italic;
+                    opacity: 0.9;
+                    margin-top: 0px;
+                    font-size: 0.95em;
+                    color: #e0e0e0;
+                `;
+                const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+                quoteBox.textContent = randomQuote;
+                introSection.appendChild(quoteBox);
+                }
+            });
+            </script>
+
+            <script>
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.style.transition = 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                logo.addEventListener('mouseenter', () => logo.style.transform = 'scale(1.15) rotate(-3deg)');
+                logo.addEventListener('mouseleave', () => logo.style.transform = 'scale(1) rotate(0deg)');
+            }
+            </script>
+
+            <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.homebar a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.style.fontWeight = 'bold';
+                link.style.textDecoration = 'underline';
+                link.style.textUnderlineOffset = '6px';
+                link.style.opacity = '1';
+            }
+            });
+        });
+        </script>
+
+    </body>
+</html>

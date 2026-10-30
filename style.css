@@ -1,0 +1,472 @@
+body{
+    margin: 0px
+}
+
+
+main{
+    margin: 0px
+}
+
+
+
+header{
+    background-color:hsl(291, 35%, 15%);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.header{
+    color:hsl(300, 20%, 99%);
+    font-family: Trebuchet MS;
+}
+
+
+
+.homebar ul{
+    list-style-type: none;
+    background-color: hsla(291, 35%, 15%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+
+
+.homebar a{
+    color: hsl(300, 20%, 99%);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+
+.homebar a:hover{
+    background-color: hsl(300, 57%, 9%)
+}
+
+
+.homebar li{
+    font-family:Trebuchet MS;
+    font-weight: bolder;
+}
+
+
+.intro{
+    text-align:center;
+    padding:30px;
+    margin:0;
+    font-family: Verdana;
+    color: hsl(300, 69%, 97%);
+    filter:drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.5));
+}
+
+
+
+.greeting{
+    text-align:center;
+    padding:50px;
+    margin: 0px;
+    font-family:Trebuchet MS;
+    color:hsl(300, 39%, 90%);
+}
+
+
+
+
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    justify-content: space-evenly
+}
+
+
+.box{
+    width:400px;
+    height:50px;
+    font-size:2em;
+    font-family:Trebuchet MS;
+    text-align:center;
+    border-radius:1px;
+}
+
+
+
+#box1{
+    background-color:hsl(0, 0%, 100%)
+}
+
+
+#box2{
+    background-color:hsl(0, 0%, 100%)
+}
+
+
+#box3{
+    background-color:hsl(0, 0%, 100%)
+}
+
+
+
+.hometer{
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    bottom:-15px;
+    width:100%;
+    padding:3px 0;
+}
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.logo{
+    animation: fadeIn 3s ease-in-out;
+}
+.greeting{
+    animation:fadeIn 2s ease-in-out;
+}
+.intro{
+    animation: fadeIn 2s ease-in-out;
+}
+.vidsec{
+    position:relative;
+    width:100%;
+    height:100;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:0;
+}
+.vidsec .bgvid{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:1;
+    margin:0;
+    padding:0;
+}
+.vidsec .conoverlay{
+    position:relative;
+    z-index:2;
+}
+.socioquote{
+    text-align:center;
+    font-family: verdana;
+}
+.logo{
+    filter:drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.5));
+}
+.logo:hover{
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.7));
+}
+
+.subsitename{
+    text-align:center;
+    justify-content:center;
+    font-family:Trebuchet MS;
+    color: hsl(300, 57%, 9%);
+    margin-top: 15px;
+    margin-bottom:2px;
+}
+
+.subheadcal{
+    text-align:center;
+    justify-content:center;
+    font-family: verdana;
+    color: hsl(300, 57%, 9%);
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+.cal-con {
+    width: 1300px;
+    height: 600px; 
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.calsheet {
+    width: 1400px;
+    height: 750px;
+    border: none;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-43%);
+}
+
+.sosyuss{
+    text-align:center;
+    justify-content:center;
+    font-family:Trebuchet MS;
+    color: hsl(300, 57%, 9%);
+    margin-top: 15px;
+    margin-bottom:2px;
+}
+
+.sosyusub{
+    text-align:center;
+    justify-content:center;
+    font-family: verdana;
+    color: hsl(300, 57%, 9%);
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+.so-con {
+    width: 1000px;           
+    height: 520px;         
+    margin: 20px auto;
+    overflow: hidden;      
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px hsl(300, 57%, 9%);
+}
+
+.so-shet {
+    width: 1200px;     
+    height: 800px;   
+    position: absolute;
+    top: -135px;    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.conent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+.rapper {
+    width: 960px;       
+    height: 530px;     
+    overflow: hidden;  
+    position: relative;
+    border-radius: 8px;
+}
+
+
+
+
+.evcon {
+    width: 100% !important;
+    height: 550px !important; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.abhed{
+    text-align:center;
+    justify-content:center;
+    font-family:Trebuchet MS;
+    color: hsl(300, 57%, 9%);
+    margin-top: 15px;
+    margin-bottom:2px;
+}
+
+
+
+
+.abcal{
+    text-align:center;
+    justify-content:center;
+    font-family: verdana;
+    color: hsl(300, 57%, 9%);
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+.abcont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+
+.alfonsu {
+    width: 960px;       
+    height: 530px;     
+    overflow: hidden;  
+    position: relative;
+    border-radius: 8px;
+}
+
+
+
+.gabby {
+    width: 100% !important;
+    height: 550px !important; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body, html {
+        width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .vidsec {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+
+    .conoverlay {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+
+    .intro {
+        white-space: pre-wrap !important;
+        word-break: break-word !important;
+        max-width: 100% !important;
+    }
+
+    .hometer .container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .hometer .box {
+        display: inline-block !important;
+        margin: 0 10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .so-con, .so-shet {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conent, .rapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .evcon {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 300px !important;
+        box-sizing: border-box !important;
+    }
+
+    .hometer .container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .hometer .box {
+        display: inline-block !important;
+        margin: 0 10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cal-con {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .calsheet {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 500px !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+    .hometer .container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .hometer .box {
+        display: inline-block !important;
+        margin: 0 10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .abcont, .alfonsu {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .gabby {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 300px !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+    .hometer .container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .hometer .box {
+        display: inline-block !important;
+        margin: 0 10px !important;
+    }
+}
